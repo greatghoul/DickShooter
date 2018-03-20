@@ -37,6 +37,10 @@ cc.Class({
             var anim = this.getComponent(cc.Animation);
             var animState = anim.play();
             animState.wrapMode = cc.WrapMode.Normal;
+
+            var sperm = cc.find('Sperm');
+            var cum = sperm.getComponent(cc.Animation);
+            cum.play();
         });
     },
 
